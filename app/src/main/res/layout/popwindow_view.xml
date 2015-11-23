@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+    <!-- 天气-->
+
+    <LinearLayout
+        android:clickable="true"
+        android:id="@+id/weather_all"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@mipmap/weather_background_big"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:layout_height="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="实时天气"
+                android:textColor="@color/red"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:layout_height="0dp"
+            android:orientation="horizontal">
+            <!-- 温度-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center">
+                    <TextView
+                        android:id="@+id/temperature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 ~ 8℃"
+                        android:textColor="@color/red"
+                        android:textSize="60dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:text="周四 11月12日 (实时：11℃)" />
+
+                <TextView
+                    android:id="@+id/pm25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:text="pm25: 193" />
+            </LinearLayout>
+
+            <!-- 温度右边内容-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/dayPictureUrl"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:src="@mipmap/weather_yin" />
+
+                <TextView
+                    android:id="@+id/weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/black"
+                    android:text="阴转小雨" />
+
+                <TextView
+                    android:id="@+id/wind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/black"
+                    android:text="微风" />
+
+                <TextView
+                    android:id="@+id/currentCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/black"
+                    android:text="郑州" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- 天气下面内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"></LinearLayout>
+        <!-- 搜索 上头条 离线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <!-- 搜索-->
+            <LinearLayout
+                android:id="@+id/search"
+                style="@style/xuanfu">
+
+                <ImageView
+                    style="@style/xuanfu_icon"
+                    android:background="@drawable/xuanfu_sousuo" />
+
+                <TextView
+                    style="@style/xuanfu_tv"
+                    android:text="搜索" />
+            </LinearLayout>
+            <!-- 上头条-->
+            <LinearLayout
+                android:id="@+id/shangtoutiao"
+                style="@style/xuanfu">
+
+                <ImageView
+                    style="@style/xuanfu_icon"
+                    android:background="@drawable/xuanfu_shangtoutiao" />
+
+                <TextView
+                    style="@style/xuanfu_tv"
+                    android:text="上头条" />
+            </LinearLayout>
+            <!-- 离线-->
+            <LinearLayout
+                android:id="@+id/lixian"
+                style="@style/xuanfu">
+
+                <ImageView
+                    style="@style/xuanfu_icon"
+                    android:background="@drawable/xuanfu_lixian" />
+
+                <TextView
+                    style="@style/xuanfu_tv"
+                    android:id="@+id/tv_lixian"
+                    android:text="离线" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 夜间 扫一扫 邀请好友-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <!-- 夜间-->
+            <LinearLayout
+                android:id="@+id/yejian"
+                style="@style/xuanfu">
+
+                <ImageView
+                    style="@style/xuanfu_icon"
+                    android:background="@drawable/xuanfu_yejian" />
+
+                <TextView
+                    style="@style/xuanfu_tv"
+                    android:id="@+id/tv_yejian"
+                    android:text="夜间" />
+            </LinearLayout>
+            <!-- 扫一扫-->
+            <LinearLayout
+                android:id="@+id/code"
+                style="@style/xuanfu">
+
+                <ImageView
+                    style="@style/xuanfu_icon"
+                    android:background="@drawable/xuanfu_coder" />
+
+                <TextView
+                    style="@style/xuanfu_tv"
+                    android:text="扫一扫" />
+            </LinearLayout>
+            <!-- 邀请好友-->
+            <LinearLayout
+                android:id="@+id/friends"
+                style="@style/xuanfu">
+
+                <ImageView
+                    style="@style/xuanfu_icon"
+                    android:background="@drawable/xuanfu_yaoqing" />
+
+                <TextView
+                    style="@style/xuanfu_tv"
+                    android:text="邀请好友" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

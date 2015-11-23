@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/toutiaozb_imgsrc"
+            android:layout_width="120dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/toutiaozb_title"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/toutiaozb_imgsrc"
+            style="@style/xinwen_item_title" />
+        <TextView
+            android:id="@+id/toutiaozb_digest"
+            style="@style/xinwen_item_digest"
+            android:layout_toRightOf="@+id/toutiaozb_imgsrc"
+            android:layout_below="@+id/toutiaozb_title" />
+        <ImageView
+            android:layout_below="@+id/toutiaozb_imgsrc"
+            android:layout_marginTop="5dp"
+            android:src="@mipmap/xinwen_toutiao_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/toutiao_zhibo_ll"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_alignBottom="@+id/toutiaozb_imgsrc"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="直播"
+                android:textColor="#ffff0000"
+                android:background="@drawable/toutiao_stroke"
+                android:padding="4dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
+
+
+
+
+

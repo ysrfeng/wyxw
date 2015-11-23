@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@mipmap/titlebar_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+    <ImageButton
+        android:id="@+id/btn_left_drawer"
+        android:layout_width="55dp"
+        android:adjustViewBounds="true"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside" />
+
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="新闻资讯" />
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_right"
+        android:onClick="clickPopWindow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/kuozhan_caidan"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"  />
+
+</LinearLayout>

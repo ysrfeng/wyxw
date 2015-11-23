@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.xiangmu.wyxw.viewpager.ContentViewPager
+        android:id="@+id/content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/title_bar"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/content_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/content_radiogroup_backgroup"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_xinwen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/content_xinwen_selector"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:singleLine="true"
+            android:text="新闻"
+            android:textColor="@drawable/content_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_redian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/content_redian_selector"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:singleLine="true"
+            android:text="热点"
+            android:textColor="@drawable/content_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_shiting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/content_shiting_selector"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:singleLine="true"
+            android:text="视听"
+            android:textColor="@drawable/content_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_yuedu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/content_yuedu_selector"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:singleLine="true"
+            android:text="阅读"
+            android:textColor="@drawable/content_textcolor" />
+
+        <RadioButton
+            android:id="@+id/rb_shezhi"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:button="@null"
+            android:drawableTop="@drawable/content_shezhi_selector"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:singleLine="true"
+            android:text="设置"
+            android:textColor="@drawable/content_textcolor" />
+    </RadioGroup>
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar_background"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/loginimage_back"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/loginimage_back"
+            android:layout_toRightOf="@+id/loginimage_back"
+            android:text="修改密码"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/biankuang"
+        android:layout_marginTop="80sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300sp"
+        android:layout_height="60sp">
+        <EditText
+            android:id="@+id/password1"
+            android:hint="输入新密码吧,小马虎"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="3sp"
+        android:background="@drawable/biankuang"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300sp"
+        android:layout_height="60sp">
+        <EditText
+            android:id="@+id/password2"
+            android:hint="敢不敢再输入一遍"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/updater"
+        android:layout_marginTop="10sp"
+        android:background="#53ba9ea6"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300sp"
+        android:gravity="center"
+        android:layout_height="60sp">
+        <TextView
+            android:text="确要提交"
+            android:textSize="22sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

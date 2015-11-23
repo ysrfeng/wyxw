@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="5sp"
+    android:background="@drawable/huifu_item_biankuang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/lineIn"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="52sp">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/in_name"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:text="黄光照"
+                android:textSize="16dp"
+                android:textColor="#ff0000"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                />
+                <TextView
+                    android:layout_marginRight="8sp"
+                    android:id="@+id/item_num"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:text="23412345"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/in_time"
+            android:text="河南  濮阳  手机网友"
+            android:textColor="#348989"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/in_info"
+        android:textSize="18sp"
+        android:text="楼上说的对啊"
+        android:layout_below="@+id/parentlinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

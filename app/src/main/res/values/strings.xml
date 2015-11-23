@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">冒泡新闻</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_xin_wen_xi">XinWenXiActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_second_code">SecondCodeActivity</string>
+    <string name="title_activity_shang_tou_tiao__hui_gu_detial">ShangTouTiao_HuiGuDetialActivity
+    </string>
+    <string name="title_activity_shang_tou_tiao">ShangTouTiaoActivity</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="title_activity_yue_du">YueDuActivity</string>
+    <string name="title_activity_yue_du_detial">YueDuDetialActivity</string>
+    <string name="title_xinwenxiactivity">xinwenxiactivity</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <string name="title_activity_welcome">冒泡新闻</string>
+    <string name="title_activity_picture">PictureActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_backpassword">BackpasswordActivity</string>
+    <string name="title_activity_updater">UpdaterActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_read_history">ReadHistoryActivity</string>
+    <string name="title_activity_gen_tie">GenTieActivity</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/biankuang">
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/pic1_iv"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/ic_launcher" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pic1_tv"
+            style="@style/text_itempic1"
+            android:layout_below="@+id/linearlayout"
+            android:text="把这东西放孩子衣柜里太危险!"
+            android:singleLine="true"
+            android:textColor="#000000" />
+
+        <View
+            android:id="@+id/view"
+            style="@style/view_item"
+            android:layout_below="@+id/pic1_tv" />
+
+        <TextView
+            style="@style/text_source"
+            android:id="@+id/pic1_source"
+            android:layout_below="@+id/view"
+            android:text="嘻嘻哈哈" />
+    </RelativeLayout>
+</RelativeLayout>

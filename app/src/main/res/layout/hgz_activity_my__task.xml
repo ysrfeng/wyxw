@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiaohuang.demo.personalsetting.My_Task">
+
+    <ImageView
+        android:id="@+id/duihuan"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:src="@mipmap/taskbackground" />
+
+    <LinearLayout
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/setting_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/backsetting"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="任务"
+            android:textColor="@color/setting_write"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp"
+        android:text="每日任务" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="150dp"
+        android:text="任务进度" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/fabiao"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/goldmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="37dp"
+                android:text="发表跟帖"
+                android:textColor="@color/text_content"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/iv11"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/iv22"
+                android:src="@mipmap/show_gold" />
+
+            <ImageView
+                android:id="@+id/iv22"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/into" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/iv11"
+                android:text="+10"
+                android:textColor="@color/gold_yanse" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/share"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/goldmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="37dp"
+                android:text="分享新闻或跟帖"
+                android:textColor="@color/text_content"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/task_jinbi"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/image2"
+                android:src="@mipmap/show_gold" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/into" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/task_jinbi"
+                android:text="+10"
+                android:textColor="@color/gold_yanse" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/xinshang"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/goldmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="37dp"
+                android:text="欣赏广告"
+                android:textColor="@color/text_content"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/task_jinbi1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/image3"
+                android:src="@mipmap/show_gold" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/into" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/task_jinbi1"
+                android:text="+5"
+                android:textColor="@color/gold_yanse" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/read_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/goldmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="37dp"
+                android:text="阅读订阅文章"
+                android:textColor="@color/text_content"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/task_jinbi4"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/image5"
+                android:src="@mipmap/show_gold" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/into" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/task_jinbi4"
+                android:text="+5"
+                android:textColor="@color/gold_yanse" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/read_news"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/goldmall" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="37dp"
+                android:text="阅读本地新闻"
+                android:textColor="@color/text_content"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/task_jinbi5"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/image6"
+                android:src="@mipmap/show_gold" />
+
+            <ImageView
+                android:id="@+id/image6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/into" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/task_jinbi5"
+                android:text="+5"
+                android:textColor="@color/gold_yanse" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/open_client"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/goldmall" />
+
+            <TextView
+                android:id="@+id/tv_client"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="37dp"
+                android:text="打开新闻客户端"
+                android:textColor="@color/text_content"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/client_glod"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_toLeftOf="@+id/task_jinbi6"
+                android:src="@mipmap/show_gold" />
+
+            <ImageView
+                android:id="@+id/task_jinbi6"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/into" />
+
+            <TextView
+                android:id="@+id/jinbijifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_toLeftOf="@+id/client_glod"
+                android:text="+5"
+                android:textColor="@color/gold_yanse" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@mipmap/shangtoutiao_person"
+            android:layout_margin="6sp"
+            android:layout_width="45sp"
+            android:layout_height="45sp" />
+        <LinearLayout
+            android:id="@+id/lineIn"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="52sp">
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:layout_width="match_parent">
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:text="朱朱"
+                    android:textSize="16dp"
+                    android:textColor="#ff0000"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+                <LinearLayout
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:id="@+id/zannum"
+                        android:gravity="center"
+                        android:text="345"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+                    <RelativeLayout
+                        android:layout_marginLeft="10sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/zan"
+                            android:background="@drawable/biz_news_list_other_segments_support"
+                            android:layout_width="35sp"
+                            android:layout_height="35sp" />
+                        <TextView
+                            android:id="@+id/tv_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="+1"
+                            android:visibility="gone"
+                            android:gravity="center"
+                            android:textSize="18dip"
+                            android:textColor="#000000"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:text="南阳  诺基亚用户"
+                android:textColor="#348989"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="52sp"
+        android:layout_below="@+id/line"
+        android:id="@+id/parentlinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+    <TextView
+        android:textSize="18sp"
+        android:text="老黄真菜!!!!!"
+        android:layout_marginLeft="52sp"
+        android:layout_below="@+id/parentlinea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

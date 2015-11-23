@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/xinwen_title_bar" />
+
+    <HorizontalScrollView
+        android:id="@+id/xinwen_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioGroup
+                android:id="@+id/xinwen_radiogroup"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb1"
+                    android:checked="true"
+                    android:text="头条"/>
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb2"
+                    android:text="娱乐"/>
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb3"
+                    android:text="体育"/>
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb4"
+                    android:text="财经"/>
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb5"
+                    android:text="科技"/>
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb6"
+                    android:text="时尚"/>
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb7"
+                    android:text="历史"/>
+
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb8"
+                    android:text="彩票"/>
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb9"
+                    android:text="军事"/>
+
+
+                <RadioButton
+                    style="@style/radio_style"
+                    android:id="@+id/xinwen_rb10"
+                    android:text="游戏"/>
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/xinwen_indicator"
+                android:layout_width="@dimen/xinwen_xia_text"
+                android:layout_height="2dp"
+                android:background="#E30E0C" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E30E0C" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/xinwen_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

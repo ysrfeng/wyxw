@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@mipmap/header_background">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="6dp"
+                    android:onClick="OnClick"
+                    android:src="@mipmap/back" />
+                <TextView
+                    android:id="@+id/mylable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="10dp"
+                    android:onClick="OnClick"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="10dp"
+                    android:text="我的标签"
+                    android:textColor="@color/setting_write"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:id="@+id/header"
+                    android:layout_width="80dp"
+                    android:onClick="OnClick"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/setting_head"
+                    android:src="@mipmap/biz_tie_user_avater_default_common" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:onClick="OnClick"
+                    android:text="dsdsdsd"
+                    android:textColor="@color/setting_write"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/zhicheng"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/user_name"
+                    android:layout_centerHorizontal="true"
+                    android:text="sdsds"
+                    android:onClick="OnClick"
+                    android:textColor="@color/yellow"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_width="80dp"
+                android:layout_gravity="left"
+                android:layout_height="30dp"
+                android:src="@mipmap/setting_gentie"/>
+        </LinearLayout>
+
+
+
+    </ScrollView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/setting_background">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/back"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:paddingBottom="6dp"-->
+                <!--android:paddingLeft="12dp"-->
+                <!--android:paddingRight="12dp"-->
+                <!--android:paddingTop="6dp"-->
+                <!--android:src="@drawable/back" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/mylable"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:paddingBottom="10dp"-->
+                <!--android:paddingLeft="12dp"-->
+                <!--android:paddingRight="12dp"-->
+                <!--android:paddingTop="10dp"-->
+                <!--android:text="我的标签"-->
+                <!--android:textColor="@color/setting_write"-->
+                <!--android:textSize="18sp" />-->
+        <!--</RelativeLayout>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

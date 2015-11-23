@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- titleBar-->
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/titlebar_background"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/back"
+            android:layout_toRightOf="@+id/back"
+            android:text="我要上头条"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/kuozhan_caidan" />
+    </RelativeLayout>
+    <!-- 内容 -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:id="@+id/huigu_scrollView"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 图片-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- 图片-->
+                <ImageView
+                    android:id="@+id/mimgsrc"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:scaleType="fitXY"></ImageView>
+
+                <TextView
+                    android:id="@+id/mtopicName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:layout_marginTop="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <TextView
+                    android:id="@+id/mtopicDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/mtopicName"
+                    android:layout_centerHorizontal="true" />
+
+                <TextView
+                    android:id="@+id/mattendnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/mtopicDesc"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_nobody2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="亲,暂无人参与讨论哦..."
+                android:textSize="20dp"
+                android:textColor="@color/red"
+                android:gravity="center"
+                android:visibility="gone"/>
+
+            <ListView
+                android:id="@+id/mlv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"></ListView>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlayout"
+                android:visibility="gone"
+                android:onClick="onclick"
+                android:clickable="true"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:background="@drawable/biankuang_popview"
+                    android:layout_width="wrap_content"
+                    android:text="点击加载更多"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="2dp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

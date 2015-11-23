@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/titlebar_background"
+        android:gravity="center_vertical">
+        <ImageButton
+            android:id="@+id/loginimage_back"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/loginimage_back"
+            android:layout_toRightOf="@+id/loginimage_back"
+            android:text="注册网易账号"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_marginTop="40sp"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="欢迎注册网易账号"
+        android:textSize="18sp" />
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:id="@+id/line1"
+        android:layout_alignLeft="@+id/text1"
+        android:layout_below="@+id/text1"
+        android:layout_width="260sp"
+        android:background="@drawable/biankuang"
+        android:layout_height="100sp">
+        <EditText
+            android:layout_marginLeft="20sp"
+            android:id="@+id/login_zhanghao"
+            android:hint="   亲,您的手机号呦"
+            android:background="#0000"
+            android:textSize="12sp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0sp"
+            />
+        <EditText
+            android:layout_marginLeft="20sp"
+            android:id="@+id/login_passwoed"
+            android:hint="   请您输入密码"
+            android:textSize="12sp"
+            android:background="#0000"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/registerbutton"
+        android:gravity="center"
+        android:text="注册"
+        android:background="#ff4a27"
+        android:layout_marginTop="30sp"
+        android:layout_alignLeft="@+id/line1"
+        android:layout_below="@+id/line1"
+        android:layout_width="260sp"
+        android:layout_height="40sp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_alignLeft="@+id/line1"
+        android:id="@+id/line2"
+        android:layout_below="@+id/registerbutton"
+        android:layout_width="260sp"
+        android:gravity="center_vertical"
+        android:layout_height="100sp">
+        <TextView
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="如果您已经注册了网易账号,或有其他可登陆第三方请您直接登录账号."
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40sp"
+            android:gravity="center_vertical"
+            android:text="直接登录------>>"
+            android:textColor="#ff4a27"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

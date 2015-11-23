@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biankuang_popview"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/bt_save"
+            android:layout_margin="3dp"
+            style="@style/button_style"
+            android:text="收藏"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:id="@+id/jieping"
+            android:layout_margin="3dp"
+            style="@style/button_style"
+            android:text="态度截屏"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:id="@+id/ziti"
+            style="@style/button_style"
+            android:text="正文字号"
+            android:layout_margin="3dp"
+            android:layout_gravity="center_horizontal" />
+        <Button
+            android:id="@+id/bt_yejian"
+            style="@style/button_style"
+            android:text="夜间模式"
+            android:layout_margin="3dp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</RelativeLayout>

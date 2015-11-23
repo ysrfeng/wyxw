@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xiangmu.wyxw.activitys.Setting_GlodPage">
+
+    <LinearLayout
+        android:id="@+id/myglod"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@color/setting_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <ImageView
+                android:id="@+id/backsetting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:text="我的金币"
+                android:textColor="@color/setting_write"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/jinbiCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45sp"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/setting_write"
+            android:textSize="40sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myglod"
+        android:background="@color/ve_place">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/zhuanjinbi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/ruhe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Q:如何赚金币 ?" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@mipmap/black_back" />
+
+                <TextView
+                    android:id="@+id/hengxian1"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/ruhe"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/ve_place" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hengxian1"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text=" 每天完成'我的任务',就可以就可以获得大把的金币
+ 奖 励  !  到 '我 -- 我 的 任 务 中  ,  看 看 有 哪 些 任 务
+ 可 以 完 成 吧 !" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/huajinbi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/where"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Q:在哪儿花金币 ?" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@mipmap/black_back" />
+
+                <TextView
+                    android:id="@+id/hengxian2"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@+id/where"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/ve_place" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hengxian2"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text=" 每天完成'我的任务',就可以就可以获得大把的金币
+ 奖 励  !  到 '我 -- 我 的 任 务 中  ,  看 看 有 哪 些 任 务
+ 可 以 完 成 吧 !" />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

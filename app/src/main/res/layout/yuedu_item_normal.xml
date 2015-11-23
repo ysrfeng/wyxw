@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/biankuang">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/layoutnor"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/normal_iv"
+                style="@style/image_item"
+                android:src="@mipmap/defaultcovers" />
+
+            <TextView
+                android:id="@+id/normal_title"
+                style="@style/text_itemnormal"
+                android:text="把这东西放孩子衣柜里太危险!"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_toRightOf="@+id/normal_iv"/>
+
+        </LinearLayout>
+
+
+        <View
+            style="@style/view_item"
+            android:layout_below="@+id/layoutnor" />
+
+        <TextView
+            style="@style/text_source"
+            android:id="@+id/normal_source"
+            android:layout_below="@+id/layoutnor"
+            android:text="中关村在线" />
+    </RelativeLayout>
+
+</RelativeLayout>

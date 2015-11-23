@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color><!--白色 -->
+    <color name="red">#ff0000</color><!--暗深红色 -->
+    <color name="black">#000000</color><!--黑色 -->
+    <color name="black_qian">#454545</color>
+    <color name="blue">#6066ea</color>
+    <color name="red2">#3aff9696</color>
+    <color name="huise">#cecece</color>
+    <color name="biz_audio_progress_bg">#00b2ff</color>
+    <color name="biz_audio_progress_first">#ffffff</color>
+    <color name="biz_audio_progress_second">#6b6666</color>
+
+    <color name="default_bg">#aa000000</color>
+    <color name="select_color">#00b2ff</color>
+    <color name="normal_color">#ffffffff</color>
+    <color name="divider_color">#55504a</color>
+    <!--special color-->
+    <color name="black_a10_color">#1a000000</color>
+    <color name="setting_background">#eb413d</color>
+    <color name="setting_write">#ffffff</color>
+    <color name="yellow">#ffff88</color>
+    <color name="ve_place">#d9d9d9</color>
+    <color name="ho_place">#f0f0f0</color>
+    <color name="text_content">#333333</color>
+    <color name="gold_yanse">#b17e27</color>
+</resources>

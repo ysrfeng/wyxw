@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- titleBar-->
+    <RelativeLayout
+        android:id="@+id/shiting_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/shiting_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:onClick="click"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back_icon" />
+
+        <TextView
+            android:id="@+id/shiting_title_gentie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/rightmore_content"
+            android:layout_toStartOf="@+id/rightmore_content"
+            android:background="@color/red"
+            android:clickable="true"
+            android:onClick="click"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/shiting_rightmore_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/menu_moreoverflow" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/shiting_head_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="5dp" />
+</LinearLayout>

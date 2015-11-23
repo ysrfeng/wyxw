@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/biankuang_stt_item"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/line1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/stt_huigu1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/topicname1"
+                android:textColor="@color/red"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/tv_top_huigu1"
+            android:layout_alignBottom="@+id/line1"
+            android:id="@+id/time1" />
+        <TextView
+            style="@style/tv_top_huigu2"
+            android:layout_below="@+id/time1"
+            android:id="@+id/topicDesc1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/topicDesc1"
+            android:layout_height="10dp" />
+    </RelativeLayout>
+</LinearLayout>

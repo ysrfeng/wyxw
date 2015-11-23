@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/xinwen_xi_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/xinwen_duotu_gentie"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:clickable="true"
+            android:background="@mipmap/titlebar_background"
+            android:gravity="center"
+            android:text="0跟帖" />
+        <ImageButton
+            android:id="@+id/xinwen_xi_fenxiang"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/share_alpha" />
+        <ImageButton
+            android:id="@+id/xinwen_xi_kuanzhan_caidan"
+            android:layout_width="50dp"
+            android:clickable="true"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/kuozhan_caidan" />
+    </LinearLayout>
+    <WebView
+        android:id="@+id/xinwen_xi_text_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+</LinearLayout>

@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- titleBar-->
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@mipmap/titlebar_background"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/back"
+            android:layout_toRightOf="@+id/back"
+            android:text="搜索新闻"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <!--android:iconifiedByDefault表示搜索图标是否在输入框内。true效果更加-->
+    <!--android:imeOptions设置IME options，即输入法的回车键的功能，可以是搜索、下一个、发送、完成等等。这里actionSearch表示搜索-->
+    <!--android:inputType输入框文本类型，可控制输入法键盘样式，如numberPassword即为数字密码样式-->
+    <!--android:queryHint输入框默认文本-->
+    <!--
+        iconifiedByDefault="false" //false:searchview初始即是展开的，true:searchview初始即是关闭的,仅显示一个放大镜
+        queryHint="@string/title_search_hint" :默认显示的提示文字
+         以上属性都可以在代码中通过方法：setIconifiedByDefault()和setQueryHint()直接设置
+        -->
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        app:defaultQueryHint="请输入关键字..."></android.support.v7.widget.SearchView>
+
+    <!-- 搜索历史 -->
+    <RelativeLayout
+        android:id="@+id/layout_sousuoHis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/layout"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:id="@+id/clear_history"
+                android:layout_alignBottom="@+id/tv"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/search_history_clear" />
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:text="搜索历史"
+                android:textColor="@color/red"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:background="@drawable/biankuang"
+            android:layout_below="@+id/layout"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <GridView
+                    android:id="@+id/gv_searchHistory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"></GridView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <!-- 搜索结果展示 默认隐藏-->
+    <LinearLayout
+        android:id="@+id/searchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="搜索结果"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="新闻" />
+
+        <com.xiangmu.wyxw.pullrefreshview.PullToRefreshListView
+            android:id="@+id/lv_searchResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"></com.xiangmu.wyxw.pullrefreshview.PullToRefreshListView>
+    </LinearLayout>
+    <!-- 热词推荐 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="3dp"
+            android:text="热词推荐"
+            android:textColor="@color/red"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="热词推荐正在加载中...."
+            android:textSize="30dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/noHotWords"
+            android:visibility="gone"/>
+        <GridView
+            android:id="@+id/houtWord_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:numColumns="2"></GridView>
+        <!--水平间方向间隔属性值android:horizontalSpacing-->
+        <!--竖直方向间隔属性值android:verticalSpacing-->
+    </LinearLayout>
+</LinearLayout>
